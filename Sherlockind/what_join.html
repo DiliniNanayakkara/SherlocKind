@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+.button {
+  background-color: #5C2A86;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: right;
+}
+.Options {
+  background-color: #5C2A86;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #174F6D;
+margin-top: 50px;
+}
+.SS ul {
+   margin-left: 100px;
+}
+.SS ul li{
+  display: inline-block;
+  list-style: none;
+
+
+} 
+
+.left p {
+  width: 50%;
+  float:  left;
+}
+
+
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/submit/
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/update/
+
+input[type=update] {
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+/*input[type=update]:hover {
+  background-color: #B8B4B8;
+}*/
+
+
+input[type=back] {
+  background-color: black;
+  color: white;
+  padding: 15px 15px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+input[type=submit]:hover {
+  background-color: #B8B4B8;
+}
+
+
+
+
+
+
+
+/* Style the container/contact section */
+.container {
+  border-radius: 10px;
+  background-color:#833003;
+  padding: 10px;
+  color: white;
+  margin-top: 50px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: center;
+  width: 50%;
+  margin-top: 6px;
+
+  padding: 20px;
+  background-color: grey;
+  color: white;
+  /opacity: 0.5;/
+}
+
+ /*Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: #49654B;
+  opacity: 0.2;
+  width: 50%;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.wallpaper {
+background-image: url("https://nu.psyche.co/images/c80d622b-beee-4122-8ef6-8d323709c4be/2400x1360.jpg");
+          background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+
+
+
+.checkradio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color :black;
+}
+
+/* Hide the browser's default radio button */
+.checkradio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  color :black;
+}
+
+/* On mouse-over, add a grey background color */
+.checkradio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.checkradio input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.checkradio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.checkradio .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: black;
+  color :black;
+}
+
+
+
+
+</style>
+  <title>SherlocKind</title>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+  $("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+}, 3000);
+</script>
+</head>
+
+<header>
+  <img src="Z.png" alt="Girl in a jacket" width="200" height="100">
+ <a href="what_join.html" class="button">SIGN UP</a>
+<a href="what_join.html" class="button">LOGIN</a>
+<a href="what_join.html" class="button">+JOIN AS MEMBER</a>  
+</header><!-- /header --><body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">SherlocKind</a>
+    </div>       
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="Home.html">HOME</a></li>
+      <li><a href="previos.html">PREVIOUS EVENT</a></li>
+      <li><a href="Future.html">FUTUR PLANS</a></li>
+      <li><a href="Details.html">ABOUT US</a></li>
+    </ul>
+  </div>
+</nav>
+<body>
+
+<div  class=wallpaper>
+  
+
+
+
+<!--<div class="container">
+  <div style="text-align:center;">
+    <h1><b><u>Add Information</u></b></h1>
+    <p></p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="/w3images/" style="width:100%">
+    </div>
+ <img src="photo-1535535112387-56ffe8db21ff.jpg" width="170" height="100">
+
+  -->
+    <center>
+
+
+
+      <div class="column" align="left">
+      <form action="/action_page.php";>
+
+        <form>
+            <h2>Member Registration</h2>
+    
+
+       
+        <label for="name">First Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter the first name..">
+
+         <label for="name">Last Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter the last name..">
+
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="email" placeholder="Enter Email Address..">
+
+        <label for="email">Address</label>
+        <input type="text" id="email" name="email" placeholder="Enter Address..">
+
+        <label for="mobileno">Mobile Number</label>
+        <input type="text" id="mobileno" name="mobileno" placeholder="Enter Mobile Number..">
+
+        <label for="type">Your position </label>
+        <select id="type" name="Employee Type" placeholder="Select position one..">
+          <option value="australia">As a member</option>
+          <option value="canada">As a OC</option>
+                </select>
+
+
+        <label for="name">Distric</label>
+        <input type="text" id="name" name="name" placeholder="Enter Distric..">       
+
+        <label for="name">Postal Code</label>
+        <input type="text" id="name" name="name" placeholder="Enter Postal Code..">
+     
+
+        <input type="submit" value="Submit">
+       
+
+
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+</center>
+</div>
